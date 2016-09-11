@@ -24,7 +24,28 @@ header{
 .wechat{
 	background:url(../img/icon/sprite.png) ;
 	background-position: 0 -60px;
-
+}
+.my-wechat{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    display: none;
+    background:url(../img/wechat-m.jpg)
+}
+.not-found{
+	text-align: center;
+	background-color:rgb(91,96,115);
+	color:white;
+	position: absolute;
+	top: 50px;
+	right: 60px;
+	height: 150px;
+	width: 120px;
+	line-height: 50px;
+	padding-top:30px; 
+	display: none;
 }
 .social-list li a:hover{
     animation:changerotate 0.3s linear;
@@ -50,7 +71,7 @@ header{
 /*右上社交媒体关联区域结束*/
 
 #banner{
-    background:url(../img/02.JPG);
+    background:url(../img/04.png);
 	background-size:100% 100%;
 	background-attachment:fixed;
 	background-repeat: no-repeat;
@@ -81,13 +102,17 @@ header{
 #bktop{
     position: fixed;
     display: block;
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     top: 10px;
     right: 10px;
     display: none;
-    background:url(../img/icon/bktop.png); 
+    background:url(../img/icon/sprite.png); 
+    background-position: 0 -90px;
     opacity: 0.5;
+}
+#bktop:hover{
+	opacity: 1;
 }
 #aboutthis{
 	background-color: #f33;
