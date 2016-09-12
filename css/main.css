@@ -76,7 +76,6 @@ header{
 	background-attachment:fixed;
 	background-repeat: no-repeat;
 	background-color: #666;
-	height:100%;
 	text-align: center;
 }
 #banner .logo{
@@ -144,35 +143,177 @@ header{
     display: none;
     background:url(../img/icon/bktop.png); 
     opacity: 0.5;
+    z-index: 999;
 }
 #bktop:hover{
 	opacity: 1;
 }
 #aboutthis{
-	background-color:rgb(34,179,172);
-	height:100%;
 	width:100%;
+}
+.aboutthis-top{
+    height: 20%;
+    width: 100%;
+    background-color: rgb(34,179,172);
+    text-align: center;
+    position: relative;
+}
+.photo-me{
+    height: 100px;
+    width: 100px;
+    background-color:#fff;
+    background: url(../img/photo-m.png);
+    background-size: cover;
+    border-radius:100%;
+    position: absolute;
+    left: 65%;
+    top: 20px;
+}
+.photo-me-ani {
+	animation:ani-photome 2s linear;
+}
+@keyframes ani-photome{
+	0%{
+    transform:scale(1.5,1.5);
+    left:50%; 
+	}
+	40%{
+    transform:scale(1,1);
+    transform:rotate(0);
+    left: 50%;
+	}
+	55%{
+    transform:rotate(90deg) ;
+	}
+	70%{
+    transform:rotate(180deg);
+	}
+	85%{
+    transform:rotate(270deg);
+	}
+	100%{
+    transform:rotate(360deg);
+	}
+
+
+}
+#aboutthis .aboutthis-top .about-me{
+	font-size: 450%;
+	width: 50%;
+	display: block;
+	border-bottom: 5px solid #fff;
+	position: absolute;
+	margin: 0 auto;
+	top: 50px;
+	left: 25%;
 	color: #fff;
 }
-#aboutthis h2,p{
-	padding: 10px;
+.about-me-ani{
+	animation:ani-aboutme 2s linear;
 }
-#where,#why,#other{
-	height: 33.33%;
-	background-color: rgb(21, 138, 132)
+@keyframes ani-aboutme{
+	0%{
+        transform:scale(0.5,0.5);
+        opacity: 0;
+	}
+	70%{
+        transform:scale(1.1,1.1);
+        opacity:1;
+	}
+	100%{
+        transform:scale(1,1);
+        opacity: 1;
+	}
 }
 
+#give-me-offer p{
+    padding: 0 0 5% 5%;
+    line-height: 2.5em;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color:rgb(79,79,79);
+}
 
+.content li{
+	height: 30px;
+	display:block;
+	color: #fff;
+	margin: 30px 0;
+	line-height: 30px;
+}
+.content li p{
 
+	display: inline-block;
+    border-radius: 15px 0 0 15px;
+    width: 18%;
+    text-align: center;
+}
+.content li span{
+	display: inline-block;
+	height: 30px;
+	border-radius: 0 15px 15px 0;
+	position: relative;
+	top: 10px;
+}
 
+.skill{
+    height: 40px;
+}
+
+.html-rage p{
+	background-color: rgb(34,179,172);
+}
+.html-rage span{
+	width: 82%;
+	background-color: rgba(34,179,172,0.5);
+}
+.js-rage p{
+	background-color: rgb(255,169,121);
+}
+.js-rage span{
+	width: 72%;
+	background-color: rgba(255,169,121,0.5);
+}
+.jq-rage p{
+	background-color:rgb(238,118,126);
+}
+.jq-rage span{
+	width: 69%;
+	background-color:rgba(238,118,126,0.5);
+}
+.res-rage p{
+	background-color: rgb(204,179,97);
+}
+.res-rage span{
+	width: 55%;
+	background-color: rgba(204,179,97,0.5);
+}
+.other-rage p{
+	background-color:rgb(136,146,181);
+}
+.other-rage span{
+	width: 36%;
+	background-color:rgba(136,146,181,0.5);
+}
+.rage-ani{
+	opacity: 0;
+	animation:ani-rage 1.8s ease-out 1s;
+	animation-fill-mode:forwards;
+}
+@keyframes ani-rage{
+	0%{
+		width: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
 
 #blog{
 	background-color: #666;
-	height:100%;
 	width:100%;
 }
 #contactme{
 	background-color: #f3f;
-	height:100%;
 	width:100%;
 }

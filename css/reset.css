@@ -25,8 +25,14 @@ h1,h2,h3,h4{
 	font-weight: normal; 
 }
 h1{
-	font-size: 50px;
+	font-size: 300%;
 }
 button{
 	border: none;
+}
+section{
+	height: 100%;
+}
+.content{
+    padding: 3% 25%;
 }
