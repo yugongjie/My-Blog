@@ -168,14 +168,17 @@ header{
     position: absolute;
     left: 65%;
     top: 20px;
+    opacity: 0;
 }
 .photo-me-ani {
 	animation:ani-photome 2s linear;
+	animation-fill-mode:forwards;
 }
 @keyframes ani-photome{
 	0%{
     transform:scale(1.5,1.5);
     left:50%; 
+    opacity: 1;
 	}
 	40%{
     transform:scale(1,1);
@@ -193,6 +196,7 @@ header{
 	}
 	100%{
     transform:rotate(360deg);
+    opacity:1;
 	}
 
 
@@ -207,9 +211,11 @@ header{
 	top: 50px;
 	left: 25%;
 	color: #fff;
+	opacity: 0;
 }
 .about-me-ani{
 	animation:ani-aboutme 2s linear;
+	animation-fill-mode:forwards;
 }
 @keyframes ani-aboutme{
 	0%{
