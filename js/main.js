@@ -1,5 +1,9 @@
 $(document).ready(function(){
     var pagetop=$(window).height();
+    var top = $(document).scrollTop();
+        if (top>0.5*pagetop){
+        	$('#bktop').fadeIn(300)
+        }
 
 	
 	/*页面跳转模块*/
@@ -38,11 +42,11 @@ $(document).ready(function(){
 	//监听滚动条并在初次载入页面时发生特效
 	$(window).scroll(function(){
 		var top = $(document).scrollTop();
-        if (top>=$('.about-me').height()-$(window).height()){
+        if (top>$('.about-me').offset().top-$(window).height()*0.5){
         	$('.about-me').addClass('about-me-ani');
         	$('.photo-me').addClass('photo-me-ani');
         };
-        if(top>$('.html-rage').height()-$(window).height()){
+        if(top>$('.html-rage').height()-$(window).height()*0.5){
         	$('.content ul li span').addClass('rage-ani')
         }
 	});
