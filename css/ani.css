@@ -73,6 +73,23 @@
 }
 
 /*page2动画*/
+
+/*标题动画*/
+@keyframes ani-aboutme{
+	0%{
+        transform:scale(0.5,0.5);
+        opacity: 0;
+	}
+	70%{
+        transform:scale(1.1,1.1);
+        opacity:1;
+	}
+	100%{
+        transform:scale(1,1);
+        opacity: 1;
+	}
+}
+
 /*头像动画*/
 @keyframes ani-photome{
 	0%{
@@ -86,31 +103,25 @@
     opacity: 1;
 	}
 	55%{
-    transform:rotate(90deg) ;
+    transform:rotate(-90deg) ;
 	}
 	70%{
-    transform:rotate(180deg);
+    transform:rotate(-180deg);
 	}
 	85%{
-    transform:rotate(270deg);
+    transform:rotate(-270deg);
 	}
 	100%{
-    transform:rotate(360deg);
+    transform:rotate(-360deg);
     opacity:1;
 	}
 }
-/*page2标题动画*/
-@keyframes ani-aboutme{
+/*技能条加载动画*/
+@keyframes ani-rage{
 	0%{
-        transform:scale(0.5,0.5);
-        opacity: 0;
-	}
-	70%{
-        transform:scale(1.1,1.1);
-        opacity:1;
+		width: 0;
 	}
 	100%{
-        transform:scale(1,1);
-        opacity: 1;
+		opacity: 1;
 	}
 }

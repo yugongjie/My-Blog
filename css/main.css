@@ -145,31 +145,16 @@ header{
 	opacity: 1;
 }
 
+
 #aboutthis{
 	width:100%;
 }
 .aboutthis-top{
-    height: 20%;
+    height: 15%;
     width: 100%;
     background-color: rgb(34,179,172);
     text-align: center;
     position: relative;
-}
-.photo-me{
-    height: 100px;
-    width: 100px;
-    background-color:#fff;
-    background: url(../img/me.png);
-    background-size: cover;
-    border-radius:100%;
-    position: absolute;
-    left: 65%;
-    top: 20px;
-    opacity: 0;
-}
-.photo-me-ani {
-	animation:ani-photome 2s linear ;
-	animation-fill-mode:forwards;
 }
 
 #aboutthis .aboutthis-top .about-me{
@@ -177,15 +162,13 @@ header{
 	width: 50%;
 	display: block;
 	border-bottom: 5px solid #fff;
-	position: absolute;
 	margin: 0 auto;
-	top: 50px;
-	left: 25%;
+	padding-top:1.4%;
 	color: #fff;
 	opacity: 0;
 }
 .about-me-ani{
-	animation:ani-aboutme 2s linear 1s;
+	animation:ani-aboutme 2s linear;
 	animation-fill-mode:forwards;
 }
 #give-me-offer p{
@@ -195,29 +178,59 @@ header{
     font-size: 20px;
     color:rgb(79,79,79);
 }
-.content li{
-	height: 30px;
-	display:block;
+#person-info{
+    text-align: center;
+}
+#person-info div{
+	display: inline-block;
+	text-align: center;
+	border-radius: 100%;
+	margin: 0 5%;
+	height: 100px;
+	width: 100px;
+	transition:transform 1s;
+}
+#person-info div:hover{
+	transform:scale(1.2,1.2);
+}
+#person-info .pho{
+    background: url(../img/me.png);
+    background-size: cover;
+    border:3px solid rgb(91,96,115);
+}
+#person-info .edu{
+	background: url(../img/icon/edu.png);
+    background-size: cover;
+    border:3px solid rgb(91,96,115);
+}
+#person-info .age{
+	background: url(../img/icon/age.png);
+    background-size: cover;
+    border:3px solid rgb(91,96,115);
+}
+#person-info .loc{
+	background: url(../img/icon/loc.jpg);
+    background-size: cover;
+    border:3px solid rgb(91,96,115);
+}
+
+#aboutthis .content li{
 	color: #fff;
 	margin: 30px 0;
-	line-height: 30px;
 }
-.content li p{
-
+#aboutthis .content li p{
 	display: inline-block;
     border-radius: 15px 0 0 15px;
     width: 18%;
     text-align: center;
+    height: 30px;
+    overflow: hidden;
+    line-height: 30px;
 }
-.content li span{
+#aboutthis .content li span{
 	display: inline-block;
 	height: 30px;
 	border-radius: 0 15px 15px 0;
-	position: relative;
-	top: 10px;
-}
-.skill{
-    height: 40px;
 }
 
 .html-rage p{
@@ -257,17 +270,10 @@ header{
 }
 .rage-ani{
 	opacity: 0;
-	animation:ani-rage 2s ease-out 3s;
+	animation:ani-rage 2s ease-out 2.5s;
 	animation-fill-mode:forwards;
 }
-@keyframes ani-rage{
-	0%{
-		width: 0;
-	}
-	100%{
-		opacity: 1;
-	}
-}
+
 
 #blog{
 	background-color: #666;
