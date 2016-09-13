@@ -1,0 +1,116 @@
+/*右上社交图标抖动*/
+@keyframes changerotate{
+	0%{
+        transform:rotate(0);
+	}
+	25%{
+        transform:rotate(-30deg);
+	}
+	50%{
+		transform:rotate(0);
+	}
+	75%{
+		transform:rotate(30deg);
+	}
+	100%{
+        transform:rotate(0);
+	}
+}
+
+/*page1动画*/
+/*logo上下分隔线加载*/
+@keyframes ani-hrone{
+	0%{
+		width: 0;
+	}
+}
+@keyframes ani-hrtwo{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 0;
+	}
+}
+
+/*logo加载*/
+@keyframes ani-logo{
+	0%{
+        padding: 8% 0;
+        opacity: 0;
+	}
+	100%{
+        padding: 5% 0;
+        opacity: 1;
+	}
+}
+
+/*logo下副标题加载*/
+@keyframes ani-h3p{
+	0%{
+        opacity: 0;
+        margin:4% 0; 
+	}
+	50%{
+		opacity: 0;
+        margin:4% 0; 
+	}
+	100%{
+        opacity: 1;
+        margin:0; 
+	}
+}
+/*跳转按钮加载*/
+@keyframes ani-guia{
+    0%{
+        opacity: 0;
+        margin-top:8%; 
+    }
+    100%{
+    	opacity: 1;
+    	margin-top:0; 
+    }
+}
+
+/*page2动画*/
+/*头像动画*/
+@keyframes ani-photome{
+	0%{
+    transform:scale(1.5,1.5);
+    left:50%; 
+	}
+	40%{
+    transform:scale(1,1);
+    transform:rotate(0);
+    left: 50%;
+    opacity: 1;
+	}
+	55%{
+    transform:rotate(90deg) ;
+	}
+	70%{
+    transform:rotate(180deg);
+	}
+	85%{
+    transform:rotate(270deg);
+	}
+	100%{
+    transform:rotate(360deg);
+    opacity:1;
+	}
+}
+/*page2标题动画*/
+@keyframes ani-aboutme{
+	0%{
+        transform:scale(0.5,0.5);
+        opacity: 0;
+	}
+	70%{
+        transform:scale(1.1,1.1);
+        opacity:1;
+	}
+	100%{
+        transform:scale(1,1);
+        opacity: 1;
+	}
+}
