@@ -1,9 +1,5 @@
 $(document).ready(function(){
     var pagetop=$(window).height();
-    var top = $(document).scrollTop();
-        if (top>0.5*pagetop){
-        	$('#bktop').fadeIn(300)
-        }
 
 	
 	/*页面跳转模块*/
@@ -34,9 +30,9 @@ $(document).ready(function(){
 	$(window).scroll(function(){
         var top = $(document).scrollTop();
         if (top>0.5*pagetop){
-        	$('#bktop').fadeIn(300)
+        	$('#bktop').slideDown(300)
         }else{
-        	$('#bktop').fadeOut(300)
+        	$('#bktop').slideUp(300)
         };
 	});
 	//监听滚动条并在初次载入页面时发生特效
