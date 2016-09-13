@@ -40,7 +40,6 @@ $(document).ready(function(){
 		var top = $(document).scrollTop();
         if (top>$('.about-me').offset().top-$(window).height()*0.5){
         	$('.about-me').addClass('about-me-ani');
-        	$('.photo-me').addClass('photo-me-ani');
         };
         if(top>$('.html-rage').height()-$(window).height()*0.5){
         	$('.content ul li span').addClass('rage-ani')
