@@ -25,10 +25,7 @@
 	}
 }
 @keyframes ani-hrtwo{
-	0%{
-		width: 0;
-	}
-	50%{
+	0%,50%{
 		width: 0;
 	}
 }
@@ -47,12 +44,8 @@
 
 /*logo下副标题加载*/
 @keyframes ani-h3p{
-	0%{
+	0%,50%{
         opacity: 0;
-        margin:4% 0; 
-	}
-	50%{
-		opacity: 0;
         margin:4% 0; 
 	}
 	100%{
@@ -62,7 +55,7 @@
 }
 /*跳转按钮加载*/
 @keyframes ani-guia{
-    0%{
+    0%,66%{
         opacity: 0;
         margin-top:8%; 
     }
@@ -71,7 +64,33 @@
     	margin-top:0; 
     }
 }
-
+/*跳转按钮特效*/
+@keyframes ani-guia-border{
+    0%{
+    	border-top:3px solid rgba(91,96,115,1); 
+    	border-right:1px solid rgba(91,96,115,0.5); 
+    	border-bottom:1px solid rgba(91,96,115,0.5); 
+    	border-left:1px solid rgba(91,96,115,0.5); 
+    }
+    33%{
+    	border-top:1px solid rgba(91,96,115,0.5); 
+    	border-right:3px solid rgba(91,96,115,1); 
+    	border-bottom:1px solid rgba(91,96,115,0.5);
+    	border-left:1px solid rgba(91,96,115,0.5); 
+    }
+    66%{
+    	border-top:1px solid rgba(91,96,115,0.5); 
+    	border-right:1px solid rgba(91,96,115,0.5); 
+    	border-bottom:2px solid rgba(91,96,115,1);
+    	border-left:1px solid rgba(91,96,115,0.5); 
+    }
+    100%{
+    	border-top:1px solid rgba(91,96,115,0.5); 
+    	border-right:1px solid rgba(91,96,115,0.5); 
+    	border-bottom:1px solid rgba(91,96,115,0.5); 
+    	border-left:2px solid rgba(91,96,115,1); 
+    }
+}
 /*page2动画*/
 
 /*标题动画*/
@@ -115,6 +134,10 @@
     transform:rotate(-360deg);
     opacity:1;
 	}
+}
+/*info图片载入动画*/
+@keyframes ani-info-pic{
+
 }
 /*技能条加载动画*/
 @keyframes ani-rage{

@@ -85,7 +85,7 @@ header{
 #banner .content .h3{
 	letter-spacing:2px;
 	padding: 2% 0 2% 0;
-	box-shadow: 0 0 0 1px rgba(91,96,115,0.5);
+	border:1px solid rgba(0,255,255,0.3);
 	background-color: rgba(91,96,115,0.1);
 }
 #banner .content .h3 p{
@@ -99,17 +99,18 @@ header{
 	height:100px;
 	width: 100px;
 	display: inline-block;
-	border:1px solid rgba(91,96,115,0.8); 
+	border:1px solid rgba(0,255,255,0.8); 
 	border-radius:50px;
 	line-height: 100px;
-	background-color: rgba(91,96,115,0.3);
+	background-color: rgba(91,96,115,0.2);
 	color: #fff;
 	font-weight: bold;
 	margin: 0 16%;
-	opacity: 0;
-	animation:ani-guia 2s ease-in 4s;
+	letter-spacing: 0px;
+	animation:ani-guia 5s ease-in ;
 	animation-fill-mode:forwards;
-	transition:transform 0.5s,box-shadow 0.5s;
+	transition:all 0.5s;
+
 }
 #banner .list a:first-child{
 	margin-left:0; 
@@ -119,10 +120,10 @@ header{
 }
 /*跳转按钮悬浮动画*/
 #banner .list a:hover{
-    box-shadow: 0 0 0 8px rgba(91,96,115,0.4);
-    border: 1px solid #fff;
-    background-color: rgba(91,96,115,0.8);
+    box-shadow: 0 0 0 6px rgba(0,255,255,0.1);
+    /*background-color: rgba(91,96,115,0.5);*/
     transform:scale(1.12,1.12);
+    letter-spacing: 4px;
 }
 
 /*主页结束*/
@@ -140,6 +141,7 @@ header{
     z-index: 999;
     transition:opacity 0.5s;
     border-radius: 10px;
+    cursor: pointer;
 }
 #bktop:hover{
 	opacity: 1;
@@ -178,38 +180,35 @@ header{
     font-size: 20px;
     color:rgb(79,79,79);
 }
-#person-info{
+#person-info-pic{
     text-align: center;
 }
-#person-info div{
+#person-info-pic div{
 	display: inline-block;
 	text-align: center;
 	border-radius: 100%;
-	margin: 0 5%;
-	height: 100px;
-	width: 100px;
+	margin: 0 4%;
+	height: 120px;
+	width: 120px;
 	transition:transform 1s;
 }
-#person-info div:hover{
-	transform:scale(1.2,1.2);
-}
-#person-info .pho{
+#person-info-pic .pho{
     background: url(../img/me.png);
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
-#person-info .edu{
-	background: url(../img/icon/edu.png);
+#person-info-pic .edu{
+	background: url(../img/icon/edu.jpg);
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
-#person-info .age{
+#person-info-pic .age{
 	background: url(../img/icon/age.png);
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
-#person-info .loc{
-	background: url(../img/icon/loc.jpg);
+#person-info-pic .loc{
+	background: url(../img/icon/loc.png);
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
