@@ -1,56 +1,22 @@
-/*右上社交媒体关联区域*/
 header{
-	position: absolute;
-	right: 30px;
-	top: 20px;
+	position: fixed;
+	z-index: 9999;
 }
-.social-list li{
-	display: inline-block;
-	margin-right:15px; 
-}
-.social-list li a{
+header ul li a{
 	display: block;
-	height: 30px;
-	width: 30px;
+    height: 80px;
+    width: 80px;
+    border:1px solid rgba(0,255,255,0.8); 
+    background-color: rgba(91,96,115,0.8);
+    border-radius:50px;
+    text-align: center;
+   	line-height: 80px; 
+   	color: #fff;
+   	animation:ani-guia 5s ease-in ;
+	animation-fill-mode:forwards;
+	transition:all 0.5s;
 }
-.weibo{
-	background:url(../img/icon/sprite.png) ;
-	background-position: 0 -30px;
-}
-.twitter{
-	background:url(../img/icon/sprite.png) ;
-	background-position: 0 0;
-}
-.wechat{
-	background:url(../img/icon/sprite.png) ;
-	background-position: 0 -60px;
-}
-.my-wechat{
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    right: 15px;
-    top: 50px;
-    display: none;
-    background:url(../img/wechat-m.jpg)
-}
-.not-found{
-	text-align: center;
-	background-color:rgb(91,96,115);
-	color:white;
-	position: absolute;
-	top: 50px;
-	right: 60px;
-	height: 150px;
-	width: 120px;
-	line-height: 50px;
-	padding-top:30px; 
-	display: none;
-}
-.social-list li a:hover{
-    animation:changerotate 0.3s linear;
-}
-/*右上社交媒体关联区域结束*/
+
 
 /* 主页*/
 #banner{
@@ -93,60 +59,16 @@ header{
 	animation-fill-mode:forwards;
 	animation:ani-h3p 3.5s linear ;
 }
-#banner .list{
-    padding: 17% 0 0 0;
-}
-#banner .list a{
-	height:100px;
-	width: 100px;
-	display: inline-block;
-	border:1px solid rgba(0,255,255,0.8); 
-	border-radius:50px;
-	line-height: 100px;
-	background-color: rgba(91,96,115,0.2);
-	color: #fff;
-	font-weight: bold;
-	margin: 0 3%;
-	letter-spacing: 0px;
-	animation:ani-guia 5s ease-in ;
-	animation-fill-mode:forwards;
-	transition:all 0.5s;
 
-}
-#banner .list a:first-child{
-	margin-left:0; 
-}
-#banner .list a:last-child{
-	margin-right: 0;
-}
+
 /*跳转按钮悬浮动画*/
 #banner .list a:hover{
     box-shadow: 0 0 0 8px rgba(0,255,255,0.1);
     transform:scale(1.12,1.12);
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 /*主页结束*/
-
-#bktop{
-    position: fixed;
-    display: block;
-    height: 50px;
-    width: 50px;
-    top: 10px;
-    right: 10px;
-    display: none;
-    background:url(../img/icon/bktop.png); 
-    opacity: 0.5;
-    z-index: 999;
-    transition:opacity 0.5s;
-    border-radius: 10px;
-    cursor: pointer;
-}
-#bktop:hover{
-	opacity: 1;
-}
-
 
 #aboutthis{
 	width:100%;
@@ -174,13 +96,11 @@ header{
 	animation-fill-mode:forwards;
 }
 #give-me-offer p{
-    padding: 0 0 5% 5%;
-    line-height: 2.5em;
     letter-spacing: 3px;
     font-size: 20px;
     color:rgb(79,79,79);
 }
-#person-info-pic{
+#person-info-pic,#person-info-txt{
     text-align: center;
 }
 #person-info-pic div{
@@ -191,6 +111,9 @@ header{
 	height: 120px;
 	width: 120px;
 	transition:transform 1s;
+}
+#person-info-pic div:hover{
+	transform:rotateY(360deg);
 }
 #person-info-pic .pho{
     background: url(../img/me.png);
@@ -212,7 +135,34 @@ header{
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
+#person-info-txt div{
+	display: inline-block;
+	width: 120px;
+	margin: 3% 4%;
+	border:2px solid  rgb(91,96,115);
+	transition:all 1s;
+}
+#person-info-txt div:hover{
+	box-shadow: 10px 10px 3px 0 rgb(91,96,115);
+	transform:scale(1.1,1.1);
+}
 
+#person-info-txt p:nth-child(2n+1){
+    text-align: left;
+    padding: 10px 0 0 10px;
+}
+#person-info-txt p:nth-child(2n){
+    text-align: right;	
+    padding: 0 10px 5px 0;
+}
+#aboutthis .content h2{
+    color: rgb(91,96,115);
+    font-size:26px;
+    padding-top:20px; 
+}
+#aboutthis .content ul{
+	margin-top: 40px;
+}
 #aboutthis .content li{
 	color: #fff;
 	margin: 30px 0;

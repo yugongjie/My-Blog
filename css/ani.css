@@ -64,33 +64,7 @@
     	margin-top:0; 
     }
 }
-/*跳转按钮特效*/
-@keyframes ani-guia-border{
-    0%{
-    	border-top:3px solid rgba(91,96,115,1); 
-    	border-right:1px solid rgba(91,96,115,0.5); 
-    	border-bottom:1px solid rgba(91,96,115,0.5); 
-    	border-left:1px solid rgba(91,96,115,0.5); 
-    }
-    33%{
-    	border-top:1px solid rgba(91,96,115,0.5); 
-    	border-right:3px solid rgba(91,96,115,1); 
-    	border-bottom:1px solid rgba(91,96,115,0.5);
-    	border-left:1px solid rgba(91,96,115,0.5); 
-    }
-    66%{
-    	border-top:1px solid rgba(91,96,115,0.5); 
-    	border-right:1px solid rgba(91,96,115,0.5); 
-    	border-bottom:2px solid rgba(91,96,115,1);
-    	border-left:1px solid rgba(91,96,115,0.5); 
-    }
-    100%{
-    	border-top:1px solid rgba(91,96,115,0.5); 
-    	border-right:1px solid rgba(91,96,115,0.5); 
-    	border-bottom:1px solid rgba(91,96,115,0.5); 
-    	border-left:2px solid rgba(91,96,115,1); 
-    }
-}
+
 /*page2动画*/
 
 /*标题动画*/

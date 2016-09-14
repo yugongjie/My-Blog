@@ -3,6 +3,9 @@ $(document).ready(function(){
 
 	
 	/*页面跳转模块*/
+	$('.banner').click(function(){
+        pagego('banner');
+	});
 	$('.aboutthis').click(function(){
         pagego('aboutthis');
 	});
@@ -20,21 +23,7 @@ $(document).ready(function(){
 	    },1000);        
     };
 
-	$('#bktop').click(function(){
-		$('html,body').animate({
-			scrollTop:0
-		},1000);
-	});
 
-    /*监听滚动条并显示或隐藏返回顶部按钮*/
-	$(window).scroll(function(){
-        var top = $(document).scrollTop();
-        if (top>0.5*pagetop){
-        	$('#bktop').slideDown(300)
-        }else{
-        	$('#bktop').slideUp(300)
-        };
-	});
 	//监听滚动条并在初次载入页面时发生特效
 	$(window).scroll(function(){
 		var top = $(document).scrollTop();
