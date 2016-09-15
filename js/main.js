@@ -17,6 +17,7 @@ $(document).ready(function(){
 	$('.contactme').click(function(){
         pagego('contactme');
 	});	
+	
     function pagego(page){
 	    $('html,body').animate({
 	    	scrollTop:$('#'+page).offset().top

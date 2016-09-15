@@ -1,22 +1,46 @@
+/*导航栏*/
 header{
 	position: fixed;
 	z-index: 9999;
+	width: 62px;
+    top:50%; 
+    margin-top: -148px;
+    margin-left: 30px;
 }
 header ul li a{
+	margin:16px 0 16px 0;
 	display: block;
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width:60px;
+    margin-left: -100px;
     border:1px solid rgba(0,255,255,0.8); 
-    background-color: rgba(91,96,115,0.8);
-    border-radius:50px;
+    background-color: rgba(91,96,115,0.4);
+    border-radius:50%;
     text-align: center;
-   	line-height: 80px; 
+   	line-height: 60px; 
    	color: #fff;
-   	animation:ani-guia 5s ease-in ;
-	animation-fill-mode:forwards;
-	transition:all 0.5s;
+   	transition:all 0.3s;
+}
+header ul li .banner{
+	animation:ani-gui-load 0.8s ease-out 3.5s;
+   	animation-fill-mode:forwards;
+}
+header ul li .aboutthis{
+	animation:ani-gui-load 0.8s ease-out 3.8s;
+   	animation-fill-mode:forwards;
+}
+header ul li .blog{
+	animation:ani-gui-load 0.8s ease-out 4.1s;
+   	animation-fill-mode:forwards;
+}
+header ul li .contactme{
+	animation:ani-gui-load 0.8s ease-out 4.4s;
+   	animation-fill-mode:forwards;
 }
 
+header ul li a:hover{
+    box-shadow: 0 0 1px 4px rgba(0,255,255,0.2);
+}
 
 /* 主页*/
 #banner{
@@ -229,6 +253,5 @@ header ul li a{
 	width:100%;
 }
 #contactme{
-	background-color: #f3f;
 	width:100%;
 }

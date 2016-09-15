@@ -1,20 +1,16 @@
-/*右上社交图标抖动*/
-@keyframes changerotate{
-	0%{
-        transform:rotate(0);
-	}
-	25%{
-        transform:rotate(-30deg);
-	}
-	50%{
-		transform:rotate(0);
-	}
-	75%{
-		transform:rotate(30deg);
-	}
-	100%{
-        transform:rotate(0);
-	}
+/*导航按钮悬浮*/
+@keyframes ani-gui-hov{
+}
+@keyframes ani-gui-load{
+    0%{
+        margin-left: -100px;
+    }
+    60%{
+        margin-left: 10px
+    }
+    100%{
+        margin-left: 0;
+    }
 }
 
 /*page1动画*/
@@ -53,17 +49,7 @@
         margin:0; 
 	}
 }
-/*跳转按钮加载*/
-@keyframes ani-guia{
-    0%,66%{
-        opacity: 0;
-        margin-top:8%; 
-    }
-    100%{
-    	opacity: 1;
-    	margin-top:0; 
-    }
-}
+
 
 /*page2动画*/
 
