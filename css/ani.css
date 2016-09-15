@@ -1,6 +1,5 @@
 /*导航按钮悬浮*/
-@keyframes ani-gui-hov{
-}
+
 @keyframes ani-gui-load{
     0%{
         margin-left: -100px;
@@ -29,11 +28,11 @@
 /*logo加载*/
 @keyframes ani-logo{
 	0%{
-        padding: 8% 0;
+        padding: 10% 0;
         opacity: 0;
 	}
 	100%{
-        padding: 5% 0;
+        padding: 8% 0;
         opacity: 1;
 	}
 }

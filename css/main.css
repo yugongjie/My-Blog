@@ -14,12 +14,12 @@ header ul li a{
     width:60px;
     margin-left: -100px;
     border:1px solid rgba(0,255,255,0.8); 
-    background-color: rgba(91,96,115,0.4);
+    background-color: rgba(0,0,0,0.3);
     border-radius:50%;
     text-align: center;
    	line-height: 60px; 
    	color: #fff;
-   	transition:all 0.3s;
+   	transition:all 0.5s;
 }
 header ul li .banner{
 	animation:ani-gui-load 0.8s ease-out 3.5s;
@@ -39,7 +39,7 @@ header ul li .contactme{
 }
 
 header ul li a:hover{
-    box-shadow: 0 0 1px 4px rgba(0,255,255,0.2);
+    box-shadow: 0 0 2px 4px rgba(0,255,255,0.2);
 }
 
 /* 主页*/
@@ -52,7 +52,7 @@ header ul li a:hover{
 	text-align: center;
 }
 .hr1{
-    margin:18% auto 0;
+    margin:20% auto 0;
     height:3px;
     display: block;
     width: 50%;
@@ -60,7 +60,7 @@ header ul li a:hover{
     animation:ani-hrone 2s ease;
 }
 #banner .logo{
-	padding: 5% 0 5% 0;
+	padding: 8% 0 8% 0;
 	animation:ani-logo 2s;
 }
 .hr2{
@@ -74,7 +74,7 @@ header ul li a:hover{
 }
 #banner .content .h3{
 	letter-spacing:4px;
-	padding: 2% 0 2% 0;
+	padding: 3% 0 3% 0;
 	border:1px solid rgba(0,255,255,0.3);
 	background-color: rgba(91,96,115,0.1);
 	line-height: 2em;
