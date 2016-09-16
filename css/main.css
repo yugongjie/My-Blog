@@ -3,7 +3,7 @@ header{
 	position: fixed;
 	z-index: 9999;
 	width: 62px;
-    top:50%; 
+    top:40%; 
     margin-top: -148px;
     margin-left: 30px;
 }
@@ -22,19 +22,19 @@ header ul li a{
    	transition:all 0.5s;
 }
 header ul li .banner{
-	animation:ani-gui-load 0.8s ease-out 3.5s;
+	animation:ani-gui-load 0.8s ease-out 3s;
    	animation-fill-mode:forwards;
 }
 header ul li .aboutthis{
-	animation:ani-gui-load 0.8s ease-out 3.8s;
+	animation:ani-gui-load 0.8s ease-out 3.3s;
    	animation-fill-mode:forwards;
 }
 header ul li .blog{
-	animation:ani-gui-load 0.8s ease-out 4.1s;
+	animation:ani-gui-load 0.8s ease-out 3.6s;
    	animation-fill-mode:forwards;
 }
 header ul li .contactme{
-	animation:ani-gui-load 0.8s ease-out 4.4s;
+	animation:ani-gui-load 0.8s ease-out 3.9s;
    	animation-fill-mode:forwards;
 }
 
@@ -52,7 +52,7 @@ header ul li a:hover{
 	text-align: center;
 }
 .hr1{
-    margin:20% auto 0;
+    margin:15% auto 0;
     height:3px;
     display: block;
     width: 50%;
@@ -116,7 +116,7 @@ header ul li a:hover{
 	opacity: 0;
 }
 .about-me-ani{
-	animation:ani-aboutme 2s linear;
+	animation:ani-aboutme 1.5s ease-out;
 	animation-fill-mode:forwards;
 }
 #give-me-offer p{
@@ -131,44 +131,71 @@ header ul li a:hover{
 	display: inline-block;
 	text-align: center;
 	border-radius: 100%;
-	margin: 0 4%;
+	margin: 0 38px;
 	height: 120px;
 	width: 120px;
-	transition:transform 1s;
-}
-#person-info-pic div:hover{
-	transform:rotateY(360deg);
+	opacity: 0;
 }
 #person-info-pic .pho{
     background: url(../img/me.png);
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
+.pho-load-ani{
+	animation:ani-infopic-load 1s ease-in 1s;
+	animation-fill-mode:forwards;
+}
 #person-info-pic .edu{
 	background: url(../img/icon/edu.jpg);
     background-size: cover;
     border:3px solid rgb(91,96,115);
+}
+.edu-load-ani{
+	animation:ani-infopic-load 1s ease-in 1.5s;
+		animation-fill-mode:forwards;
 }
 #person-info-pic .age{
 	background: url(../img/icon/age.png);
     background-size: cover;
     border:3px solid rgb(91,96,115);
 }
+.age-load-ani{
+	animation:ani-infopic-load 1s ease-in 2s;
+		animation-fill-mode:forwards;
+}
 #person-info-pic .loc{
 	background: url(../img/icon/loc.png);
     background-size: cover;
     border:3px solid rgb(91,96,115);
+}
+.loc-load-ani{
+	animation:ani-infopic-load 1s ease-in 2.5s;
+		animation-fill-mode:forwards;
 }
 #person-info-txt div{
 	display: inline-block;
 	width: 120px;
 	margin: 3% 4%;
 	border:2px solid  rgb(91,96,115);
-	transition:all 1s;
-}
-#person-info-txt div:hover{
 	box-shadow: 10px 10px 3px 0 rgb(91,96,115);
 	transform:scale(1.1,1.1);
+
+}
+.photxt-load-ani{
+    animation:ani-infotxt-load 1s ease-in 1s;
+    animation-fill-mode:forwards;
+}
+.edutxt-load-ani{
+    animation:ani-infotxt-load 1s ease-in 1.5s;
+    animation-fill-mode:forwards;
+}
+.agetxt-load-ani{
+    animation:ani-infotxt-load 1s ease-in 2s;
+    animation-fill-mode:forwards;
+}
+.loctxt-load-ani{
+    animation:ani-infotxt-load 1s ease-in 2.5s;
+    animation-fill-mode:forwards;
 }
 
 #person-info-txt p:nth-child(2n+1){
@@ -243,15 +270,78 @@ header ul li a:hover{
 }
 .rage-ani{
 	opacity: 0;
-	animation:ani-rage 2s ease-out 2.5s;
+	animation:ani-rage 2s ease-out 3s;
 	animation-fill-mode:forwards;
 }
 
 
 #blog{
-	background-color: #666;
+	background-color: #ff6;
 	width:100%;
 }
+
+
 #contactme{
+	background-color: #999;
 	width:100%;
+	text-align: center;
+}
+#contactme h1{
+	padding: 80px 0 80px 0;
+}
+#contactme h2{
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+#email{
+	padding: 80px 0;
+}
+#email a{
+	color: rgb(241,95,64);
+	font-size: 20px;
+}
+#email a:hover{
+	text-decoration: underline;
+	color: rgb(35,82,156);
+}
+#social li{
+	display: inline-block;
+
+}
+#social li a{
+	margin:0 15px;
+	display: inline-block;
+   	height: 50px;
+    width: 50px;
+    border-radius: 25%;
+	border: 2px solid rgb(91,96,115);
+    transition:all 0.5s;
+
+}
+#social li a:hover{
+	transform:scale(1.1,1.1);
+	    border: 2px solid rgb(241,95,64);
+}
+.twi{   
+	background:url(../img/icon/sprite.png);
+    background-position: 0px -200px;
+}
+.face{
+	background:url(../img/icon/sprite.png);
+    background-position: 0px -50px;
+}
+.weib{
+	background:url(../img/icon/sprite.png);
+    background-position:0px -150px;	
+}
+.git{
+	background:url(../img/icon/sprite.png);
+    background-position:0px -100px;
+}
+.csdn{
+    background: url(../img/icon/sprite.png);
+    background-position: 0 0;
+}
+#copyright{
+    margin-top:50px; 
 }

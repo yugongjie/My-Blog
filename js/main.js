@@ -28,11 +28,30 @@ $(document).ready(function(){
 	//监听滚动条并在初次载入页面时发生特效
 	$(window).scroll(function(){
 		var top = $(document).scrollTop();
+		//page2标题加载
         if (top>$('.about-me').offset().top-$(window).height()*0.5){
         	$('.about-me').addClass('about-me-ani');
         };
+        //page2技能条加载
         if(top>$('.html-rage').height()-$(window).height()*0.5){
         	$('.content ul li span').addClass('rage-ani')
+        }
+        //page2info模块加载
+        if(top>$('#person-info-pic').height()-$(window).height()*0.5){
+        	//pic加载
+        	$('#person-info-pic .pho').addClass('pho-load-ani');
+        	$('#person-info-pic .edu').addClass('edu-load-ani');
+        	$('#person-info-pic .age').addClass('age-load-ani');
+        	$('#person-info-pic .loc').addClass('loc-load-ani');
+            //txt加载
+        	$('#person-info-txt .pho-txt').addClass('photxt-load-ani');
+        	$('#person-info-txt .edu-txt').addClass('edutxt-load-ani');
+        	$('#person-info-txt .age-txt').addClass('agetxt-load-ani');
+        	$('#person-info-txt .loc-txt').addClass('loctxt-load-ani');
+        }
+
+        if(top>$('.html-rage').height()-$(window).height()*0.5){
+
         }
 	});
     
