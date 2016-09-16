@@ -142,8 +142,7 @@ header ul li a:hover{
     border:3px solid rgb(91,96,115);
 }
 .pho-load-ani{
-	animation:ani-infopic-load 1s ease-in 1s;
-	animation-fill-mode:forwards;
+	animation:ani-infopic-load 1s ease-in 1s forwards;
 }
 #person-info-pic .edu{
 	background: url(../img/icon/edu.jpg);
@@ -151,8 +150,7 @@ header ul li a:hover{
     border:3px solid rgb(91,96,115);
 }
 .edu-load-ani{
-	animation:ani-infopic-load 1s ease-in 1.5s;
-		animation-fill-mode:forwards;
+	animation:ani-infopic-load 1s ease-in 1.5s forwards;
 }
 #person-info-pic .age{
 	background: url(../img/icon/age.png);
@@ -160,8 +158,7 @@ header ul li a:hover{
     border:3px solid rgb(91,96,115);
 }
 .age-load-ani{
-	animation:ani-infopic-load 1s ease-in 2s;
-		animation-fill-mode:forwards;
+	animation:ani-infopic-load 1s ease-in 2s forwards;
 }
 #person-info-pic .loc{
 	background: url(../img/icon/loc.png);
@@ -169,8 +166,7 @@ header ul li a:hover{
     border:3px solid rgb(91,96,115);
 }
 .loc-load-ani{
-	animation:ani-infopic-load 1s ease-in 2.5s;
-		animation-fill-mode:forwards;
+	animation:ani-infopic-load 1s ease-in 2.5s forwards;
 }
 #person-info-txt div{
 	display: inline-block;
@@ -179,23 +175,18 @@ header ul li a:hover{
 	border:2px solid  rgb(91,96,115);
 	box-shadow: 10px 10px 3px 0 rgb(91,96,115);
 	transform:scale(1.1,1.1);
-
 }
 .photxt-load-ani{
-    animation:ani-infotxt-load 1s ease-in 1s;
-    animation-fill-mode:forwards;
+    animation:ani-infotxt-load 1s ease-in 1s forwards;
 }
 .edutxt-load-ani{
-    animation:ani-infotxt-load 1s ease-in 1.5s;
-    animation-fill-mode:forwards;
+    animation:ani-infotxt-load 1s ease-in 1.5s forwards;
 }
 .agetxt-load-ani{
-    animation:ani-infotxt-load 1s ease-in 2s;
-    animation-fill-mode:forwards;
+    animation:ani-infotxt-load 1s ease-in 2s forwards;
 }
 .loctxt-load-ani{
-    animation:ani-infotxt-load 1s ease-in 2.5s;
-    animation-fill-mode:forwards;
+    animation:ani-infotxt-load 1s ease-in 2.5s forwards;
 }
 
 #person-info-txt p:nth-child(2n+1){
